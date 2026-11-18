@@ -2,7 +2,7 @@
 // Pages: network first (fresh deploys), falling back to the cached shell.
 // Static assets (JS/CSS/models/wasm/fonts): cache first, filled as used.
 // The AI chat API is never cached.
-const CACHE = 'move-rehab-v3';
+const CACHE = 'move-rehab-v4';
 // works at a domain root or in a sub-folder (e.g. GitHub Pages /move-rehab/)
 const B = new URL(self.registration.scope).pathname;
 const SHELL = [B, B + 'manifest.webmanifest', B + 'icons/icon-192.png', B + 'icons/icon-512.png', B + 'move-logo-white.svg'];
